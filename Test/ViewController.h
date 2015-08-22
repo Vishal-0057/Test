@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UISearchControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UISearchDisplayController *searchD;
+}
 
 @end
 
